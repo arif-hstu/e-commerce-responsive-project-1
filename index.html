@@ -21,24 +21,41 @@ font-family: 'Roboto', sans-serif; -->
 <body>
     <!-- start of head -->
     <head>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
+    <!-- start of navbar-->
+        <nav class="navbar navbar-expand-lg py-3 shadow-sm">
+            <div class="container">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="icons/logo.png" width="300" alt="" class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
+                <span class="text-uppercase font-weight-bold">Company</span>
+            </a>
+        
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            </div>
         </nav>
-    </head>
+        <!-- end of Navbar -->
+      </head>
     <!-- end of head -->
+
+    <main>
+        <section class="main-section">
+            <div class="col-md-6">
+                <h1>Be the penguins of winter</h1>
+                <p>lorem10</p>
+            </div>
+            <div class="col-md-6"></div>
+        </section>
+    </main>
     
 
     <!-- import bootstrap js -->
