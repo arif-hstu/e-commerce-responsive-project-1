@@ -6,9 +6,18 @@ nav {
     background-color: #fffbf0;
 }
 
-.navbar .menu-items {
+nav a {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: #3e3e3e; 
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a4bc46;
+}
+
+nav .active {
+    font-weight: 500;
 }
 
 /* end of navbar */
@@ -27,6 +36,7 @@ nav {
     font-size: 16px;
     font-weight: 400;
 }
+
 .highlight {
     color: #FABE4C;
 }
@@ -160,10 +170,15 @@ h4 {
 
 .contact-section button {
     background-color: #3e3e3e;
+    color: #fff;
     border: none;
 }
 
 .contact-section button:hover {
     background-color: #a4bc46;
+}
+
+.contact-section a:hover{
+    color: #8ba817;
 }
 /* end of contact section */
