@@ -1,8 +1,111 @@
-body{
+body {
 }
+
+/* navbar */
+nav {
+    background-color: #fffbf0;
+}
+
+/* end of navbar */
+
+/* main section */
+.main-section {
+    background-color: #fffbf0;
+    height: 60vmin;
+}
+.btn-primary {
+    background: linear-gradient(to bottom, #A4BC46, #85A019);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.highlight {
+    color: #FABE4C;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    color: #363958;
+    text-transform: uppercase;
+}
+p {
+    color: #3E3E3E;
+    font-family: 'Roboto', sans-serif;
+}
+/* end of main section */
 
 /* woman jacket section */
-.img-fluid {
+.woman-jacket-section .row >div {
+    padding:0 10px;
+}
+.card {
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.08 );
+    padding: 15px;
+}
+
+.woman-jacket-section h4 {
+    padding-top: 20px;
+}
+
+.woman-jacket-section .image-holder {
+    height: 20em;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.woman-jacket-section .image-holder img{
+    max-width: 100%;
+    max-height: 80%;
 
 }
+   
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: #363958;
+    text-transform: uppercase;
+}
+
+.man-jacket-section h4 {
+    padding-top: 20px;
+}
 /* end of woman jacket section */
+
+.man-jacket-section .row >div {
+    padding:0 10px;
+}
+
+.man-jacket-section .image-holder {
+    height: 20em;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.man-jacket-section .image-holder img{
+    max-width: 100%;
+    max-height: 80%;
+
+}
+
+/* offer section */
+.offer-section .offer-feature {
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.08 );
+    padding: 15px;
+}
+
+.offer-section .offer-card {
+    padding: 5px;
+}
+
+/* end of offer section */

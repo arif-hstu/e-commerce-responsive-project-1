@@ -7,16 +7,19 @@
 
     <!-- import font family-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 <!-- font-family: 'Bebas Neue', cursive;
 font-family: 'Roboto', sans-serif; -->
 
     <!-- import bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- import stylesheet -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
 </head>
@@ -24,44 +27,63 @@ font-family: 'Roboto', sans-serif; -->
     <!-- start of head -->
     <head>
     <!-- start of navbar-->
-        <nav class="navbar navbar-expand-lg py-3 shadow-sm">
-            <div class="container">
-            <a href="#" class="navbar-brand">
-                <!-- Logo Image -->
-                <img src="icons/logo.png" width="300" alt="" class="d-inline-block align-middle mr-2">
-                <!-- Logo Text -->
-                <span class="text-uppercase font-weight-bold">Company</span>
-            </a>
-        
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-        
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+        <nav class="container navbar navbar-expand-lg  
+        navbar-light fixed-top py-lg-0 "> 
+            <a class="navbar-brand" href="#"> 
+                <!--logo with size of 90*80 -->
+                <img src= 
+        "icons/logo.png"
+                width="291" height="" alt=""> 
+            </a>       
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+        </button> 
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive"> 
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item active"> 
+                    <a class="nav-link" href="#">Home 
+                        <span class="sr-only">(current)</span> 
+                    </a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">About</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Courses</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Contact</a> 
+                </li> 
+            </ul> 
+        </div> 
+    </nav> 
         <!-- end of Navbar -->
       </head>
     <!-- end of head -->
 
     <main>
         <!-- main section -->
-        <section class="main-section container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <h1>Be the penguins of winter</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique!</p>
-                    <button class="btn btn-primary " >
-                        <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                    </button>
-                </div>
-                <div class="col-md-6">
-                    <img class="w-50" src="/images/female1.png" alt="">
+        <section class="main-section">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5">
+                        <h1 class="highlight">Be the penguins</h1>
+                        <h1>of winter</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique!</p>
+                        <button class="btn btn-primary" >
+                            <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                            <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                        </button>
+                    </div>
+                    <div class="col-md-7">
+                        <img class="w-50" src="/images/female1.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -69,44 +91,59 @@ font-family: 'Roboto', sans-serif; -->
 
         <!-- woman Jacket Section -->
         <section class="woman-jacket-section container">
-            <h2>woman Jacket</h2>
+            <h2 class="py-5">woman Jacket</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="/images/jacket1.png" alt="">
-                    <h4>Jacket</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, at.</p>
-                    <div class="price-holder d-flex justify-content-between">
-                        <div><h3>$234</h3></div>
-                        <div>
-                            <button class="btn btn-primary ">
-                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                            </button>
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <div class="image-holder d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/images/jacket3.png" alt="">
+                        </div>
+                        <h4>Jacket</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, at.</p>
+                        <div class="price-holder d-flex justify-content-between">
+                            <div><h3 class="highlight">$234</h3></div>
+                            <div>
+                                <button class="btn btn-primary" >
+                                    <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                    <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid" src="/images/jacket2.png" alt="">
-                    <h4>Jacket</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem!</p>
-                    <div class="price-holder d-flex justify-content-between">
-                        <div><h3>$234</h3></div>
-                        <div>
-                            <button class="btn btn-primary ">
-                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                            </button>
+                    <div class=" card">
+                        <div class="image-holder d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/images/jacket2.png" alt="">
+                        </div>
+                        <h4>Jacket</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem!</p>
+                        <div class="price-holder d-flex justify-content-between">
+                            <div><h3 class="highlight">$234</h3></div>
+                            <div>
+                                <button class="btn btn-primary" >
+                                    <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                    <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="/images/jacket3.png" alt="">
-                    <h4>Jacket</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur.</p>
-                    <div class="price-holder d-flex justify-content-between">
-                        <div><h3>$234</h3></div>
-                        <div>
-                            <button class="btn btn-primary ">
-                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                            </button>
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <div class="image-holder d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/images/jacket1.png" alt="">
+                        </div>
+                        <h4>Jacket</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur.</p>
+                        <div class="price-holder d-flex justify-content-between">
+                            <div><h3 class="highlight">$234</h3></div>
+                            <div>
+                                <button class="btn btn-primary" >
+                                    <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                    <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,82 +151,103 @@ font-family: 'Roboto', sans-serif; -->
         </section>
         <!-- End of woman Jacket Section -->
 
-        <!--man jacket section -->
-        <section class="woman-jacket-section container">
-            <h2>Man Jacket</h2>
+        <!-- man jacket Section -->
+        <section class="man-jacket-section container pb-5">
+            <h2 class="py-5">man Jacket</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="/images/jacket4.png" alt="">
-                    <h4>Jacket</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, at.</p>
-                    <div class="price-holder d-flex justify-content-between">
-                        <div><h3>$234</h3></div>
-                        <div>
-                            <button class="btn btn-primary ">
-                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                            </button>
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <div class="image-holder d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/images/jacket4.png" alt="">
+                        </div>
+                        <h4>Jacket</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, at.</p>
+                        <div class="price-holder d-flex justify-content-between">
+                            <div><h3 class="highlight">$234</h3></div>
+                            <div>
+                                <button class="btn btn-primary" >
+                                    <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                    <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid" src="/images/jacket5.png" alt="">
-                    <h4>Jacket</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem!</p>
-                    <div class="price-holder d-flex justify-content-between">
-                        <div><h3>$234</h3></div>
-                        <div>
-                            <button class="btn btn-primary ">
-                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                            </button>
+                    <div class=" card">
+                        <div class="image-holder d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/images/jacket5.png" alt="">
+                        </div>
+                        <h4>Jacket</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem!</p>
+                        <div class="price-holder d-flex justify-content-between">
+                            <div><h3 class="highlight">$234</h3></div>
+                            <div>
+                                <button class="btn btn-primary" >
+                                    <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                    <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="/images/jacket6.png" alt="">
-                    <h4>Jacket</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur.</p>
-                    <div class="price-holder d-flex justify-content-between">
-                        <div><h3>$234</h3></div>
-                        <div>
-                            <button class="btn btn-primary ">
-                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                            </button>
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <div class="image-holder d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="/images/jacket6.png" alt="">
+                        </div>
+                        <h4>Jacket</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur.</p>
+                        <div class="price-holder d-flex justify-content-between">
+                            <div><h3 class="highlight">$234</h3></div>
+                            <div>
+                                <button class="btn btn-primary" >
+                                    <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                    <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--end of man jacket section -->
+        <!-- End of man Jacket Section -->
 
         <!-- offer section -->
-        <section class="offer-section container">
+        <section class="offer-section container py-5">
             <div class="row">
                 <div class="col-md-6">
-                   <div class="offer-feature row">
-                        <div class="col-4 ">
-                            <img class="img-fluid w-50" src="/icons/icon1.png" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h4>Find the Perfect Fit</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores!</p>
-                        </div>
-                   </div>
-                   <div class="offer-feature row">
-                        <div class="col-4 ">
-                            <img class="img-fluid w-50" src="/icons/icon2.png" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h4>Find the Perfect Fit</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores!</p>
+                    <div class="offer-card">
+                        <div class="offer-feature row">
+                            <div class="col-4 ">
+                                <img class="img-fluid w-50" src="/icons/icon1.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h4>Find the Perfect Fit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores!</p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-feature row">
+                            <div class="col-4 ">
+                                <img class="img-fluid w-50" src="/icons/icon2.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h4>Find the Perfect Fit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores!</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="offer-feature row">
-                        <div class="col-4 ">
-                            <img class="img-fluid w-50" src="/icons/icon3.png" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h4>Find the Perfect Fit</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores!</p>
+                    <div class="offer-card">
+                        <div class="offer-feature row">
+                            <div class="col-4 ">
+                                <img class="img-fluid w-50" src="/icons/icon3.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h4>Find the Perfect Fit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores!</p>
+                            </div>
                         </div>
                     </div>
 
@@ -204,7 +262,8 @@ font-family: 'Roboto', sans-serif; -->
     
 
     <!-- import bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
