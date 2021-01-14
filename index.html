@@ -24,10 +24,9 @@ font-family: 'Roboto', sans-serif; -->
     
 </head>
 <body>
-    <!-- start of head -->
     <head>
     <!-- start of navbar-->
-        <nav class="navbar navbar-expand-lg fixed-top py-lg-0"> 
+        <nav class="navbar navbar-expand-lg fixed-top py-lg-0 navbar-light"> 
            <div class="container">
             <a class="navbar-brand py-4" href="#"> 
                 <img src="icons/logo.png" width="291" alt=""> 
@@ -63,24 +62,26 @@ font-family: 'Roboto', sans-serif; -->
         </nav> 
         <!-- end of Navbar -->
     </head>
-    <!-- end of head -->
 
     <main>
         <!-- main section -->
-        <section class="main-section py-5">
+        <section class="main-section">
             <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
+                <div class="row d-flex justify-content-between">
                     <div class="col-md-5">
-                        <h1 class="highlight">Be the penguins</h1>
-                        <h1>of winter</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique!</p>
-                        <button class="btn btn-primary" >
-                            <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
-                            <a class="text-white text-decoration-none" href="#">Buy Now!</a>
-                        </button>
+                        <div>
+                            <h1><span class="highlight">Be the penguins</span><br> of winter</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique!</p>
+                            <button class="btn btn-primary" >
+                                <i class="fa fa-shopping-cart mr-1" style="font-size:20px;color:white;"></i>
+                                <a class="text-white text-decoration-none" href="#">Buy Now!</a>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-md-7">
-                        <img class="w-50" src="/images/profile1.png" alt="">
+                    <div class="col-md-7 image-holder">
+                        <div class="text-right">
+                            <img class=" w-75 mt-5" src="/images/profile1.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,7 +262,7 @@ font-family: 'Roboto', sans-serif; -->
         <section class="contact-section py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-3">
+                    <div class="col-md-12 col-lg-3 info-1">
                         <a class="navbar-brand pb-2" href="#"> 
                             <img src="icons/logo.png" alt=""> 
                         </a>
@@ -291,7 +292,7 @@ font-family: 'Roboto', sans-serif; -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="col-md-6 col-lg-3 col-sm-12 info">
                         <h4><a href="#">My Account</a></h4>
                         <ul>
                             <li><a href="#">Order History</a></li>
@@ -300,7 +301,7 @@ font-family: 'Roboto', sans-serif; -->
                             <li><a href="#">contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="col-md-6 col-lg-3 col-sm-12 info">
                         <h4><a href="#">INFORMATION</a></h4>
                         <ul>
                             <li><a href="#">Shipping Information</a></li>
@@ -310,7 +311,7 @@ font-family: 'Roboto', sans-serif; -->
                             <li><a href="#">Delivery Information</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-12 col-lg-3">
+                    <div class="col-md-12 col-lg-3 info-1">
                         <h4><a href="#">NEWSLETTER</a></h4>
                         <p>Subscribe to our newsletter and get 10% off your first purchase.</p> 
                         <div class="input-group mb-3">
